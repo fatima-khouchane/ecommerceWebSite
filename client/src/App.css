@@ -1,0 +1,312 @@
+
+
+/* header acheteut */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #adb9fd;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 19.0rem;
+}
+
+
+.header-list {
+  display: flex;
+  /* flex: 1; */
+  justify-content: flex-end;
+}
+
+.header-list-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-list-nav li {
+  margin: 0 15px;
+}
+
+.header-list-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-list-nav a:hover,
+.header-list-nav a.active {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+.header-list-nav .header-list-icon {
+  display: flex;
+  align-items: center;
+}
+
+.header-list-nav .header-list-icon i {
+  font-size: 20px;
+}
+
+.header-list-nav button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 18px;
+}
+
+.header-list-nav button:hover {
+  background-color: #218838;
+}
+
+.btn_logout {
+  background-color: #947376;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn_logout:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .header-list-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-list-nav li {
+    margin: 10px 0;
+  }
+}
+
+/* css login---------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* NAV DE categire ----------------------------------------------------------------------------------------*/
+
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+    width: 100%;
+
+}
+
+.navbar p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #a6a9dd;
+  color: #fff;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* card----------------------------------------------------------------------------------------------------- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #777;
+  margin: 10px 0;
+}
+
+.card-price {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-actions input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.card-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-actions button:hover {
+  background-color: #0056b3;
+}
+
+.favorite-icon {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: red;
+  transition: color 0.3s;
+}
+
+.favorite-icon.favorite {
+  color: rgb(181, 0, 0);
+}
+
+.card-login-prompt {
+  color: #777;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.card-login-link {
+  color: #007bff;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.card-login-link:hover {
+  text-decoration: underline;
+}
+
+
+/* style button afficher plus */
+/* Add this CSS to your stylesheet */
+.button-afficher-plus {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 20px auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button-afficher-plus:hover {
+  background-color: #5d94e1;
+  color: #f0f0f0;
+}
+
+.button-afficher-plus:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+}
